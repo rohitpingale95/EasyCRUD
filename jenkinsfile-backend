@@ -9,5 +9,12 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/rohitpingale95/EasyCRUD.git'
             }
         }
+        stage('Build'){
+            steps{
+                dir('backend'){
+                    sh 'mvn clean package'
+                }
+            }
+        }
     }
 }
