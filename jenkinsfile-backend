@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                sh git branch: 'main', url: 'https://github.com/rohitpingale95/EasyCRUD.git'
+                git branch: 'main', url: 'https://github.com/rohitpingale95/EasyCRUD.git'
             }
         }
     }
