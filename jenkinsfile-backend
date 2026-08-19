@@ -7,7 +7,7 @@ pipeline{
         maven 'mvn'
     }
 
-    enviornment{
+    environment{
         my_aws_cred = credentials('aws-access')
     }
 
