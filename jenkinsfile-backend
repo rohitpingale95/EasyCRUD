@@ -102,12 +102,12 @@ pipeline{
                 ]) {
 
                     sh '''
-                        git config user.name "rohitptech"
+                        git config user.name "rohitpingale95"
                         git config user.email "pingalerohit@gmail.com"
 
                         git add k8s/backend/backend-deployment.yaml
                         git commit -m "Update backend-deployment"
-                        git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/rohitptech/EasyCRUD.git HEAD:main
+                        git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/rohitpingale95/EasyCRUD.git HEAD:main
                     '''
                 }
             }
